@@ -1,0 +1,266 @@
+.top-banner__content {
+    background: linear-gradient(135deg, #092040 0%, #0f4496 100%);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-banner__container {
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+.top-banner {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner-content h2 {
+    margin: 0 0 5px 0;
+}
+
+.banner-content p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.banner-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.banner-btn {
+    color: #ffffff !important;
+    border-radius: 6px;
+}
+
+.banner-btn:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.logout-btn {
+    border-color: #ff4d4f !important;
+    color: #ff4d4f !important;
+}
+
+.logout-btn:hover {
+    background: rgba(255, 77, 79, 0.1) !important;
+}
+
+/* Стили для Блока 2 */
+
+.summary-header__controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.summary-header__controls-right {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+}
+
+.summary-section {
+    margin-top: 24px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.summary-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    color: #2c3e50;
+}
+
+.summary-subtitle {
+    font-size: 13px;
+    color: #7f8c8d;
+}
+
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.summary-card {
+    background: #f8f9fa;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #95a5a6;
+    font-weight: 600;
+}
+
+.card-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* Стили для Блока 3 */
+
+.stats-info {
+    padding: 30px 0;
+}
+
+.stats-section {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.stats-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    color: #2c3e50;
+}
+
+.stats-subtitle {
+    font-size: 13px;
+    color: #7f8c8d;
+    margin-bottom: 24px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.text-secondary {
+    color: #7f8c8d;
+}
+
+/* ============== */
+
+.p-input-icon-left {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.p-input-icon-left i {
+    position: absolute;
+    left: 10px;
+    color: #666;
+}
+
+.p-input-icon-left input {
+    padding-left: 32px;
+}
+
+.user-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-avatar {
+    background: #eef2ff;
+    color: #0f4496;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-badge.active {
+    background-color: #e6f4ea;
+    color: #137333;
+}
+
+.status-badge.offline {
+    background-color: #f1f3f4;
+    color: #5f6368;
+}
+
+.quality-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 120px;
+}
+
+.quality-text {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 6px;
+    background-color: #e9ecef;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #0f4496;
+    border-radius: 3px;
+}
+
+.p-datatable-custom :deep(.p-datatable-thead > tr > th) {
+    background-color: #f8fafc;
+    color: #0f4496;
+    font-weight: 600;
+}
+
+@media (max-width: 1400px) {
+    .top-banner__container {
+        margin: 0;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .summary-header__controls {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 712px) {
+    .summary-header__controls-right {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .banner-content p {
+        display: none;
+    }
+}
+
+@media (max-width: 512px) {
+    .banner-content h2 {
+        font-size: 16px;
+        margin: 0;
+    }
+}

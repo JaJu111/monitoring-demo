@@ -1,0 +1,349 @@
+.top-banner__content {
+    background: linear-gradient(135deg, #092040 0%, #0f4496 100%);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-banner__container {
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+.top-banner {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner-content h2 {
+    margin: 0 0 5px 0;
+}
+
+.banner-content p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.banner-content span {
+    color: #ff4d4f;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.banner-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.banner-btn {
+    color: #ffffff !important;
+    border-radius: 6px;
+}
+
+.banner-btn:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.logout-btn {
+    border-color: #ff4d4f !important;
+    color: #ff4d4f !important;
+}
+
+.logout-btn:hover {
+    background: rgba(255, 77, 79, 0.1) !important;
+}
+
+
+/* Список пользователей */
+
+
+.admin-panel__container {
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+.admin-panel {
+    padding: 30px 0;
+    background-color: var(--p-surface-50, #f8f9fa);
+    min-height: calc(100vh - 100px);
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.form-header h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
+}
+
+.p-input-icon-left {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.p-input-icon-left i {
+    position: absolute;
+    left: 10px;
+    color: #666;
+}
+
+.p-input-icon-left input {
+    padding-left: 32px;
+}
+
+.user-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-avatar {
+    background: #eef2ff;
+    color: #0f4496;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.table-header :deep(.p-inputtext):focus {
+    border-color: #0f4496;
+    box-shadow: 0 0 0 0.2rem rgba(15, 68, 150, 0.15);
+    outline: 0 none;
+}
+
+.status-badge.active {
+    background-color: #e6f4ea;
+    color: #137333;
+}
+
+.status-badge.offline {
+    background-color: #f1f3f4;
+    color: #5f6368;
+}
+
+.quality-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 120px;
+}
+
+.quality-text {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 6px;
+    background-color: #e9ecef;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #0f4496;
+    border-radius: 3px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.p-datatable-custom :deep(.p-datatable-thead > tr > th) {
+    background-color: #f8fafc;
+    color: #0f4496;
+    font-weight: 600;
+}
+
+.p-card :deep(.p-card-body) {
+    gap: 30px;
+}
+
+.header-controls :deep(.p-button).create-btn {
+    background-color: #0f4496 !important;
+    border-color: #0f4496 !important;
+    color: #ffffff !important;
+    padding: 5px 20px;
+    margin-left: 12px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.header-controls :deep(.p-button).create-btn:hover {
+    background-color: #0b3370 !important;
+    border-color: #0b3370 !important;
+}
+
+.header-controls :deep(.p-button).create-btn:active {
+    transform: scale(0.98);
+}
+
+
+/* Добавить нового пользователя */
+
+.mb-4 {
+    margin-bottom: 2rem;
+}
+
+.add-user-container {
+    width: 500px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+}
+
+.add-user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.field-group label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #475569;
+    margin: 0;
+}
+
+.form-actions {
+    display: flex;
+}
+
+.add-user-form :deep(.p-inputtext),
+.add-user-form :deep(.p-selectbutton),
+.add-user-form :deep(.p-button).create-btn {
+    height: 44px;
+}
+
+.add-user-form :deep(.p-button).create-btn {
+    width: 100%;
+    background-color: #0f4496 !important;
+    border-color: #0f4496 !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    padding: 0 2.5rem;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.add-user-form :deep(.p-button).create-btn:hover {
+    background-color: #0b3370 !important;
+    border-color: #0b3370 !important;
+}
+
+.add-user-form :deep(.p-button).create-btn:active {
+    transform: scale(0.98);
+}
+
+.add-user-form :deep(.p-inputtext):focus {
+    border-color: #0f4496;
+    box-shadow: 0 0 0 0.2rem rgba(15, 68, 150, 0.15);
+    outline: 0 none;
+}
+
+.add-user-form :deep(.p-inputtext):hover:not(:focus) {
+    border-color: #a1a1aa;
+}
+
+.role-invalid :deep(.p-selectbutton) {
+    border: 1px solid #ef4444;
+    border-radius: 6px;
+    box-shadow: 0 0 0 0.2rem rgba(239, 68, 68, 0.15);
+    transition: all 0.2s ease;
+}
+
+.error-text {
+    color: #ef4444;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1400px) {
+    .top-banner__container {
+        margin: 0;
+        padding: 0 20px;
+    }
+    .admin-panel {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header-controls {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-content p {
+        display: none;
+    }
+    .add-user-form :deep(.p-togglebutton-content) {
+        padding: 0 4px;
+    }
+    .add-user-form :deep(.p-togglebutton-content) span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 550px) {
+    .banner-content h2 {
+        font-size: 16px;
+        margin: 0;
+    }
+    .table-header {
+        flex-direction: column;
+        align-items: start;
+    }
+    .table-header h3 {
+        font-size: 16px;
+    }
+    .header-controls {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header-controls button {
+        margin: 0!important;
+    }
+    .header-controls input {
+        width: 100%;
+    }
+}

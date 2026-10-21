@@ -1,0 +1,165 @@
+.login-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.top-banner {
+    background: linear-gradient(135deg, #092040 0%, #0f4496 100%);
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner-content h1 {
+    margin: 10px 0 5px 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.banner-content p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 1rem;
+}
+
+.banner-icon {
+    font-size: 2.5rem;
+}
+
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.login-card :deep(.p-card-body) {
+    gap: 20px !important;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    user-select: none;
+}
+
+.form-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.form-layout button:disabled {
+    cursor: not-allowed;
+}
+
+.form-layout button:hover {
+    filter: brightness(1);
+}
+
+.login-field, .password-field, .roles-field label {
+    user-select: none;
+}
+
+.login-field input::placeholder {
+    user-select: none;
+}
+
+.role-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 0;
+    font-size: 0.85rem;
+}
+
+.role-option i {
+    font-size: 1.2rem;
+}
+
+.submit-btn {
+    padding: 12px;
+    background-color: #0f4496 !important;
+    border-color: #0f4496 !important;
+    color: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0b3370 !important;
+    border-color: #0b3370 !important;
+}
+
+.submit-btn:disabled:hover {
+    background-color: #0f4496 !important;
+    border-color: #0f4496 !important;
+}
+
+.form-layout {
+    gap: 4px;
+}
+
+.field {
+    margin-bottom: 1.5rem;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--p-text-color);
+}
+
+.form-layout :deep(.p-inputtext) {
+    height: 44px;
+}
+
+.form-layout :deep(.p-inputtext):focus {
+    border-color: #0f4496;
+    box-shadow: 0 0 0 0.2rem rgba(15, 68, 150, 0.2);
+    outline: 0 none;
+}
+
+.form-layout :deep(.p-inputtext):hover:not(:focus) {
+    border-color: #0f4496;
+}
+
+.role-invalid :deep(.p-selectbutton) {
+    border: 1px solid var(--p-red-500, #ef4444);
+    border-radius: var(--p-content-border-radius, 6px);
+    box-shadow: 0 0 0 0.2rem rgba(239, 68, 68, 0.2);
+    transition: all 0.2s ease;
+}
+
+.error-text {
+    display: block;
+    color: var(--p-red-500, #ef4444);
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    .login-form-container {
+        padding: 20px;
+    }
+
+    .login-form-container :deep(.p-togglebutton-content) {
+        padding: 0 4px;
+    }
+
+    .role-option span {
+        font-size: 11px;
+    }
+}

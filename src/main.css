@@ -1,0 +1,46 @@
+html,
+body {
+    font-family: 'Manrope';
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+@font-face {
+    font-family: 'Manrope';
+    src: url("./assets/fonts/Manrope/Manrope-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap; 
+}
+@font-face {
+    font-family: 'Manrope';
+    src: url("./assets/fonts/Manrope/Manrope-Medium.ttf") format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap; 
+}
+@font-face {
+    font-family: 'Manrope';
+    src: url("./assets/fonts/Manrope/Manrope-SemiBold.ttf") format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap; 
+}
+.p-dialog-mask {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(8px) !important;
+}
+.p-drawer-right .p-drawer {
+    border-inline-start-width: 0 !important;
+    border: none !important;
+}
+
+@media (max-width: 550px) {
+    .p-dialog-mask {
+        padding: 0 20px;
+    }
+}
